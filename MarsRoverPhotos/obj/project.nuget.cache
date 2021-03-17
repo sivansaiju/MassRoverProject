@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "wvD2Eyb6XpxLFQRr6M3Bw0ycQB/O3afHsnB7phHwHbGzuY2jtu1SltUB7oy5xgGxqKNdF0ChDgHLUmBZN6lQSw==",
+  "success": true,
+  "projectFilePath": "C:\\MarsRoverExercise\\MarsRoverPhotos\\MarsRoverPhotos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ss91063\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\ss91063\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512"
+  ],
+  "logs": []
+}
