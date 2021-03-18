@@ -1,0 +1,4 @@
+C:\MarsRoverExercise\MarsRoverPhotos\src\MarsRoverPhotosAPI.dll
+C:\MarsRoverExercise\MarsRoverPhotos\src\MarsRoverPhotosAPI.deps.json
+C:\MarsRoverExercise\MarsRoverPhotos\src\MarsRoverPhotosAPI.pdb
+C:\MarsRoverExercise\MarsRoverPhotos\src\RestSharp.dll

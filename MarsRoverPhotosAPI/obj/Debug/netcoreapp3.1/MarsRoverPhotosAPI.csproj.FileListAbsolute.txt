@@ -9,9 +9,9 @@ C:\MotorolaInterview\MarsRoverPhotosAPI\obj\Debug\netcoreapp3.1\MarsRoverPhotosA
 C:\MarsRoverExercise\MarsRoverPhotosAPI\bin\Debug\netcoreapp3.1\MarsRoverPhotosAPI.deps.json
 C:\MarsRoverExercise\MarsRoverPhotosAPI\bin\Debug\netcoreapp3.1\MarsRoverPhotosAPI.dll
 C:\MarsRoverExercise\MarsRoverPhotosAPI\bin\Debug\netcoreapp3.1\MarsRoverPhotosAPI.pdb
-C:\MarsRoverExercise\MarsRoverPhotosAPI\obj\Debug\netcoreapp3.1\MarsRoverPhotosAPI.csprojAssemblyReference.cache
 C:\MarsRoverExercise\MarsRoverPhotosAPI\obj\Debug\netcoreapp3.1\MarsRoverPhotosAPI.AssemblyInfoInputs.cache
 C:\MarsRoverExercise\MarsRoverPhotosAPI\obj\Debug\netcoreapp3.1\MarsRoverPhotosAPI.AssemblyInfo.cs
 C:\MarsRoverExercise\MarsRoverPhotosAPI\obj\Debug\netcoreapp3.1\MarsRoverPhotosAPI.csproj.CoreCompileInputs.cache
 C:\MarsRoverExercise\MarsRoverPhotosAPI\obj\Debug\netcoreapp3.1\MarsRoverPhotosAPI.dll
 C:\MarsRoverExercise\MarsRoverPhotosAPI\obj\Debug\netcoreapp3.1\MarsRoverPhotosAPI.pdb
+C:\MarsRoverExercise\MarsRoverPhotosAPI\obj\Debug\netcoreapp3.1\MarsRoverPhotosAPI.csprojAssemblyReference.cache

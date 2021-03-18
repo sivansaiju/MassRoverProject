@@ -1,0 +1,10 @@
+C:\MarsRoverExercise\MarsRoverPhotos\src\MarsRoverPhotos.exe
+C:\MarsRoverExercise\MarsRoverPhotos\src\appsettings.Development.json
+C:\MarsRoverExercise\MarsRoverPhotos\src\appsettings.json
+C:\MarsRoverExercise\MarsRoverPhotos\src\MarsRoverPhotos.dll
+C:\MarsRoverExercise\MarsRoverPhotos\src\MarsRoverPhotos.deps.json
+C:\MarsRoverExercise\MarsRoverPhotos\src\MarsRoverPhotos.runtimeconfig.json
+C:\MarsRoverExercise\MarsRoverPhotos\src\MarsRoverPhotos.pdb
+C:\MarsRoverExercise\MarsRoverPhotos\src\RestSharp.dll
+C:\MarsRoverExercise\MarsRoverPhotos\src\MarsRoverPhotosAPI.dll
+C:\MarsRoverExercise\MarsRoverPhotos\src\MarsRoverPhotosAPI.pdb

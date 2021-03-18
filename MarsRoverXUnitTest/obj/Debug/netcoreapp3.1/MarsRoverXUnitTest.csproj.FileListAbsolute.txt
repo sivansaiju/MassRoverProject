@@ -472,3 +472,13 @@ C:\MarsRoverExercise\MarsRoverXUnitTest\obj\Debug\netcoreapp3.1\MarsRoverXUnitTe
 C:\MarsRoverExercise\MarsRoverXUnitTest\obj\Debug\netcoreapp3.1\MarsRoverXUnitTest.csproj.CopyComplete
 C:\MarsRoverExercise\MarsRoverXUnitTest\obj\Debug\netcoreapp3.1\MarsRoverXUnitTest.dll
 C:\MarsRoverExercise\MarsRoverXUnitTest\obj\Debug\netcoreapp3.1\MarsRoverXUnitTest.genruntimeconfig.cache
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\CodeCoverage\CodeCoverage.config
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\web.config
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\appsettings.Development.json
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\appsettings.json
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\coverlet.collector.deps.json
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\MarsRoverPhotos.deps.json
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\MarsRoverPhotos.runtimeconfig.json
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\MarsRoverPhotosAPI.deps.json
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\MarsRoverXUnitTest.deps.json
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\MarsRoverXUnitTest.runtimeconfig.json

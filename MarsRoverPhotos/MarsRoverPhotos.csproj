@@ -16,5 +16,15 @@
     <ProjectReference Include="..\MarsRoverPhotosAPI\MarsRoverPhotosAPI.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="MarsImages\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Dates.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 
 </Project>

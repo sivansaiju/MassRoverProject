@@ -33,5 +33,9 @@ namespace MarsRoverPhotosAPI.Models
   {
     public List<Photo> photos { get; set; }
   }
-
+  public class imageDtls
+  {
+    public string img_src { get; set; }
+    public string earth_date { get; set; }
+  }
 }

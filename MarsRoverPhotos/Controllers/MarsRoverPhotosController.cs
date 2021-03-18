@@ -44,6 +44,7 @@ namespace MarsRoverPhotos.Controllers
       List<string> lstRoverNames = roverNames.Split(',').ToList();
       List<Photo> result = new List<Photo>();
       List<DateTime> lstDate = _roverImageDtls.GetDates(dateFile);
+      List<imageDtls> imageDtls = new List<imageDtls>();
       Root marsPhotos;
 
       foreach (DateTime date in lstDate)
@@ -61,7 +62,8 @@ namespace MarsRoverPhotos.Controllers
             {
               foreach (Photo varPh in marsPhotos.photos)
               {
-                result.Add(varPh);
+                //result.Add(varPh);
+                imageDtls.Add(new imageDtls { earth_date = varPh.earth_date, img_src = varPh.img_src });
                 if (!string.IsNullOrEmpty(varPh.img_src))
                 {
                   using (WebClient client = new WebClient())
@@ -76,7 +78,7 @@ namespace MarsRoverPhotos.Controllers
           }
         }
       }
-      return Ok(result);
+      return Ok(imageDtls);
     }
 
   }

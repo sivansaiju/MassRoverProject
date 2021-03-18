@@ -7,7 +7,28 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsRoverPhotos", "MarsRove
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsRoverPhotosAPI", "..\MarsRoverPhotosAPI\MarsRoverPhotosAPI.csproj", "{07CAED6E-D030-4151-896E-9A60B0D1DC72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRoverXUnitTest", "..\MarsRoverXUnitTest\MarsRoverXUnitTest.csproj", "{FBBADBB2-6E42-471D-A1E1-8E640560AF61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsRoverXUnitTest", "..\MarsRoverXUnitTest\MarsRoverXUnitTest.csproj", "{FBBADBB2-6E42-471D-A1E1-8E640560AF61}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MarsRoverUI", "..\MarsRoverUI\", "{EB0D5436-1B24-4E9A-A171-B5825ECE1280}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55922"
+		Debug.AspNetCompiler.PhysicalPath = "..\MarsRoverUI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55922\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55922"
+		Release.AspNetCompiler.PhysicalPath = "..\MarsRoverUI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55922\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55922"
+		SlnRelativePath = "..\MarsRoverUI\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +48,10 @@ Global
 		{FBBADBB2-6E42-471D-A1E1-8E640560AF61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBBADBB2-6E42-471D-A1E1-8E640560AF61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBBADBB2-6E42-471D-A1E1-8E640560AF61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB0D5436-1B24-4E9A-A171-B5825ECE1280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB0D5436-1B24-4E9A-A171-B5825ECE1280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB0D5436-1B24-4E9A-A171-B5825ECE1280}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB0D5436-1B24-4E9A-A171-B5825ECE1280}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
