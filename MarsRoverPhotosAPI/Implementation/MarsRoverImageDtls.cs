@@ -25,38 +25,7 @@ namespace MarsRoverPhotosAPI.Implementation
       return result;
 
     }
-    public DateTime? ParseDate(string date)
-    {
-      DateTime dateValue;
-      CultureInfo enUS = new CultureInfo("en-US");
 
-      var formatStrings = new string[] { "MM/dd/yy", "MMMM d, yyyy", "MMM-d-yyyy" };
-
-      if (DateTime.TryParseExact(date, formatStrings, enUS, DateTimeStyles.None, out dateValue))
-        return dateValue;
-      else
-        return null;
-    }
-
-    public List<DateTime> GetDates(string datefile)
-    {
-      List<DateTime> dateInputList = new List<DateTime>();
-      FileStream dateList = new FileStream(datefile, FileMode.Open);
-      using (StreamReader reader = new StreamReader(dateList))
-      {
-        while (reader.Peek() >= 0)
-        {
-          string line = reader.ReadLine();
-
-          DateTime? date = ParseDate(line);
-          if (date != null)
-          {
-            dateInputList.Add((DateTime)date);
-          }
-        }
-      }
-      return dateInputList;
-    }
   }
 }
 

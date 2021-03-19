@@ -7,6 +7,8 @@ using Microsoft.Extensions.Logging;
 using MarsRoverPhotos.Controllers;
 using Microsoft.Extensions.Configuration;
 using Moq;
+using Shouldly;
+
 namespace MarsRoverXUnitTest
 {
 
@@ -19,7 +21,9 @@ namespace MarsRoverXUnitTest
     private const string apiUrl = "https://api.nasa.gov/mars-photos/api/v1/rovers";
     private const string apiKey = "DEMO_KEY";
     private const string roverName = "Curiosity";
+    private const string dateFile = "Dates.txt";
     private DateTime imageDate = new DateTime(2015, 06, 03);
+    private DateTime invalidDate = new DateTime(2015, 05, 31);
     public MarsRoverControllerTest()
     {
       controllerContext = new ControllerContext() { HttpContext = new DefaultHttpContext() };
@@ -36,6 +40,14 @@ namespace MarsRoverXUnitTest
       var response = await objmarsRover.GetMarsPhotos();
       Assert.NotNull(response);
       Assert.True( ((OkObjectResult)response).StatusCode == 200);
+    }
+    [Fact]
+    public void invalidDate_Shouldbe_NULL()
+    {
+      var moqMarsRoverImageDtls = new Mock<IMarsRoverImageDtls>();
+      objmarsRover = new MarsRoverPhotosController(logger, moqMarsRoverImageDtls.Object, iConfig) { ControllerContext = controllerContext };
+      var result = objmarsRover.ParseDate(invalidDate.ToString());
+      result.ShouldBeNull();
     }
   }
 }

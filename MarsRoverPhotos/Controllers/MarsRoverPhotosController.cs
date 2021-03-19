@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using System.IO;
 using System.Net;
 using System.Text;
+using System.Globalization;
 
 namespace MarsRoverPhotos.Controllers
 {
@@ -42,8 +43,7 @@ namespace MarsRoverPhotos.Controllers
       var roverNames = _iConfig.GetSection("AppSettings:RoverName").Get<string>();
 
       List<string> lstRoverNames = roverNames.Split(',').ToList();
-      List<Photo> result = new List<Photo>();
-      List<DateTime> lstDate = _roverImageDtls.GetDates(dateFile);
+      List<DateTime> lstDate = GetDates(dateFile);
       List<imageDtls> imageDtls = new List<imageDtls>();
       Root marsPhotos;
 
@@ -54,15 +54,11 @@ namespace MarsRoverPhotos.Controllers
           foreach (string roverName in lstRoverNames)
           {
             marsPhotos = await _roverImageDtls.GetMarsImages(roverName, marsApi, apiKey, date);
-            if (marsPhotos == null)
-            {
-              return NotFound();
-            }
-            if (marsPhotos.photos != null)
+
+            if ( marsPhotos!=null && marsPhotos.photos != null )
             {
               foreach (Photo varPh in marsPhotos.photos)
               {
-                //result.Add(varPh);
                 imageDtls.Add(new imageDtls { earth_date = varPh.earth_date, img_src = varPh.img_src });
                 if (!string.IsNullOrEmpty(varPh.img_src))
                 {
@@ -80,6 +76,37 @@ namespace MarsRoverPhotos.Controllers
       }
       return Ok(imageDtls);
     }
+    public DateTime? ParseDate(string date)
+    {
+      DateTime dateValue;
+      CultureInfo enUS = new CultureInfo("en-US");
 
+      var formatStrings = new string[] { "MM/dd/yy", "MMMM d, yyyy", "MMM-d-yyyy" };
+
+      if (DateTime.TryParseExact(date, formatStrings, enUS, DateTimeStyles.None, out dateValue))
+        return dateValue;
+      else
+        return null;
+    }
+
+    public List<DateTime> GetDates(string datefile)
+    {
+      List<DateTime> dateInputList = new List<DateTime>();
+      FileStream dateList = new FileStream(datefile, FileMode.Open);
+      using (StreamReader reader = new StreamReader(dateList))
+      {
+        while (reader.Peek() >= 0)
+        {
+          string line = reader.ReadLine();
+
+          DateTime? date = ParseDate(line);
+          if (date != null)
+          {
+            dateInputList.Add((DateTime)date);
+          }
+        }
+      }
+      return dateInputList;
+    }
   }
 }

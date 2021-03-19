@@ -13,7 +13,7 @@ namespace MarsRoverXUnitTest
     private DateTime pastDate = new DateTime(1776, 01, 01);
     private DateTime futureDate = new DateTime(2999, 01, 01);
     private DateTime imageDate = new DateTime(2015, 06, 03);
-    private DateTime invalidDate = new DateTime(2015, 05, 31);
+
     [Fact]
     public async void pastDateresult_Shouldbe_NULL()
     {
@@ -35,12 +35,6 @@ namespace MarsRoverXUnitTest
       Root result = await objMarsRoverImageDtls.GetMarsImages("badRoverName", apiUrl, apiKey, imageDate);
       result.photos.ShouldBeNull();
     }
-    [Fact]
-    public void invalidDate_Shouldbe_NULL()
-    {
-      MarsRoverImageDtls objMarsRoverImageDtls = new MarsRoverImageDtls();
-      var result = objMarsRoverImageDtls.ParseDate(invalidDate.ToString());
-      result.ShouldBeNull();
-    }
+
   }
 }

@@ -14,4 +14,3 @@ C:\MarsRoverExercise\MarsRoverPhotosAPI\obj\Debug\netcoreapp3.1\MarsRoverPhotosA
 C:\MarsRoverExercise\MarsRoverPhotosAPI\obj\Debug\netcoreapp3.1\MarsRoverPhotosAPI.csproj.CoreCompileInputs.cache
 C:\MarsRoverExercise\MarsRoverPhotosAPI\obj\Debug\netcoreapp3.1\MarsRoverPhotosAPI.dll
 C:\MarsRoverExercise\MarsRoverPhotosAPI\obj\Debug\netcoreapp3.1\MarsRoverPhotosAPI.pdb
-C:\MarsRoverExercise\MarsRoverPhotosAPI\obj\Debug\netcoreapp3.1\MarsRoverPhotosAPI.csprojAssemblyReference.cache
