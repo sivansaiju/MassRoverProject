@@ -39,20 +39,29 @@ namespace MarsRoverPhotos.Controllers
       var marsApi = _iConfig.GetSection("AppSettings:MarsRoverBaseApiUrl").Get<string>();
       var apiKey = _iConfig.GetSection("AppSettings:MarsRoverApiKey").Get<string>();
       var dateFile = _iConfig.GetSection("AppSettings:DatesFile").Get<string>();
-      var imageFolder = _iConfig.GetSection("AppSettings:ImageFolder").Get<string>();
+      var imageLoc = _iConfig.GetSection("AppSettings:ImageFolder").Get<string>();
       var roverNames = _iConfig.GetSection("AppSettings:RoverName").Get<string>();
 
       List<string> lstRoverNames = roverNames.Split(',').ToList();
       List<DateTime> lstDate = GetDates(dateFile);
       List<imageDtls> imageDtls = new List<imageDtls>();
       Root marsPhotos;
+      var imageFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imageLoc);
+      if (!Directory.Exists(imageFolder))
+      {
+        Directory.CreateDirectory(imageFolder);
+      }
+
 
       foreach (DateTime date in lstDate)
       {
         if (date != null)
         {
+
           foreach (string roverName in lstRoverNames)
           {
+            string message = string.Format("Retrieving photos on date {0} for the Rover : {1}", date.ToString(), roverName);
+            _logger.LogInformation(message);
             marsPhotos = await _roverImageDtls.GetMarsImages(roverName, marsApi, apiKey, date);
 
             if ( marsPhotos!=null && marsPhotos.photos != null )
@@ -72,6 +81,8 @@ namespace MarsRoverPhotos.Controllers
               }
             }
           }
+
+
         }
       }
       return Ok(imageDtls);
@@ -81,16 +92,22 @@ namespace MarsRoverPhotos.Controllers
       DateTime dateValue;
       CultureInfo enUS = new CultureInfo("en-US");
 
-      var formatStrings = new string[] { "MM/dd/yy", "MMMM d, yyyy", "MMM-d-yyyy" };
+      string[] formatStrings = {"dd/MM/yyyy", "dd/M/yyyy", "d/M/yyyy", "d/MM/yyyy","dd/MM/yy", "dd/M/yy", "d/M/yy", "d/MM/yy"};
 
       if (DateTime.TryParseExact(date, formatStrings, enUS, DateTimeStyles.None, out dateValue))
         return dateValue;
       else
+      {
+        string message = string.Format("Date :{0} is not a valid date ", date.ToString());
+        _logger.LogInformation(message);
         return null;
+      }
+        
     }
 
     public List<DateTime> GetDates(string datefile)
     {
+ 
       List<DateTime> dateInputList = new List<DateTime>();
       FileStream dateList = new FileStream(datefile, FileMode.Open);
       using (StreamReader reader = new StreamReader(dateList))

@@ -4,9 +4,6 @@ using RestSharp;
 using MarsRoverPhotosAPI.Interfaces;
 using MarsRoverPhotosAPI.Models;
 using System.Text;
-using System.Globalization;
-using System.Collections.Generic;
-using System.IO;
 
 namespace MarsRoverPhotosAPI.Implementation
 {
@@ -17,13 +14,13 @@ namespace MarsRoverPhotosAPI.Implementation
     {
       StringBuilder strUrl = new StringBuilder(marsApi);
       strUrl.Append(roverName);
-      strUrl.AppendFormat("/photos?earth_date={0}{1}{2}", String.Format("{0:yyyy-MM-dd}", date), "&api_key=", apiKey);
+      strUrl.AppendFormat("/photos?earth_date={0}{1}{2}", string.Format("{0:yyyy-MM-dd}", date), "&api_key=", apiKey);
       var client = new RestClient(strUrl.ToString());
       var request = new RestRequest(Method.GET);
       var jsonResponse = await client.ExecuteAsync<Root>(request);
       var result = jsonResponse.Data;
       return result;
-
+      
     }
 
   }

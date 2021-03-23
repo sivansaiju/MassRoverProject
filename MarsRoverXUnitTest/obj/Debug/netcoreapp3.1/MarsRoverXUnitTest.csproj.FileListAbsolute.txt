@@ -482,3 +482,12 @@ C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\MarsRoverPho
 C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\MarsRoverPhotosAPI.deps.json
 C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\MarsRoverXUnitTest.deps.json
 C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\src\MarsRoverXUnitTest.runtimeconfig.json
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\Serilog.dll
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\Serilog.Extensions.Logging.dll
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\Serilog.Extensions.Logging.File.dll
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.dll
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\Serilog.Sinks.Async.dll
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\Serilog.Sinks.RollingFile.dll
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\MarsRoverExercise\MarsRoverXUnitTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll

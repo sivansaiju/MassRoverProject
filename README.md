@@ -7,3 +7,7 @@ Open the soultion "MarsRoverPhotos.sln" from the folder MarsRoverPhotos. Then ru
 
 After successfull run of the API find the images under the folder "\MarsRoverPhotos\MarsImages".
 Please wait to get the final response from the API to see all the images.
+
+To Pull the API docker image from my docker Repository, use the below command
+
+docker pull saijusivan/marsroverphotos:v1

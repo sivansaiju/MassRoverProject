@@ -1,0 +1,7 @@
+2021-03-23T17:01:27.1605618-05:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2021-03-23T17:01:27.1684675-05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-03-23T17:01:27.1695115-05:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-03-23T17:01:27.1705153-05:00  [INF] Content root path: "C:\MarsRoverExercise\MarsRoverPhotos" (b5d60022)
+2021-03-23T17:01:31.2179267-05:00 0HM7E8SQJLGTO:00000001 [INF] Date : is not a valid date  (8a2dd548)
+2021-03-23T17:01:31.2211087-05:00 0HM7E8SQJLGTO:00000001 [INF] Date : is not a valid date  (8a2dd548)
+2021-03-23T17:01:31.2231200-05:00 0HM7E8SQJLGTO:00000001 [INF] Retrieving photos on date 3/6/2015 12:00:00 AM for the Rover : Curiosity (9223e93d)
